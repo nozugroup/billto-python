@@ -1,0 +1,1555 @@
+[
+  {
+    "name": "invoices.list.0",
+    "resource": "invoices",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "invoices",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ],
+      "meta": {
+        "current_page": 1,
+        "last_page": 1
+      }
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": "Page",
+    "collect": false
+  },
+  {
+    "name": "invoices.all.1",
+    "resource": "invoices",
+    "method": "all",
+    "args": [
+      {
+        "page": 99
+      }
+    ],
+    "verb": "GET",
+    "path": "invoices",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ]
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "invoices.get.2",
+    "resource": "invoices",
+    "method": "get",
+    "args": [
+      "r1"
+    ],
+    "verb": "GET",
+    "path": "invoices/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "invoices.create.3",
+    "resource": "invoices",
+    "method": "create",
+    "args": [
+      {
+        "name": "Zażółć gęślą jaźń",
+        "flag": false
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "invoices",
+    "body": {
+      "name": "Zażółć gęślą jaźń",
+      "flag": false
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "invoices.update.4",
+    "resource": "invoices",
+    "method": "update",
+    "args": [
+      "r1",
+      {
+        "name": "X"
+      },
+      "event"
+    ],
+    "verb": "PUT",
+    "path": "invoices/r1",
+    "body": {
+      "name": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "invoices.delete.5",
+    "resource": "invoices",
+    "method": "delete",
+    "args": [
+      "r1"
+    ],
+    "verb": "DELETE",
+    "path": "invoices/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "orders.list.6",
+    "resource": "orders",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "orders",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ],
+      "meta": {
+        "current_page": 1,
+        "last_page": 1
+      }
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": "Page",
+    "collect": false
+  },
+  {
+    "name": "orders.all.7",
+    "resource": "orders",
+    "method": "all",
+    "args": [
+      {
+        "page": 99
+      }
+    ],
+    "verb": "GET",
+    "path": "orders",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ]
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "orders.get.8",
+    "resource": "orders",
+    "method": "get",
+    "args": [
+      "r1"
+    ],
+    "verb": "GET",
+    "path": "orders/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Order",
+    "collect": false
+  },
+  {
+    "name": "orders.create.9",
+    "resource": "orders",
+    "method": "create",
+    "args": [
+      {
+        "name": "Zażółć gęślą jaźń",
+        "flag": false
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders",
+    "body": {
+      "name": "Zażółć gęślą jaźń",
+      "flag": false
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Order",
+    "collect": false
+  },
+  {
+    "name": "orders.update.10",
+    "resource": "orders",
+    "method": "update",
+    "args": [
+      "r1",
+      {
+        "name": "X"
+      },
+      "event"
+    ],
+    "verb": "PUT",
+    "path": "orders/r1",
+    "body": {
+      "name": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Order",
+    "collect": false
+  },
+  {
+    "name": "orders.delete.11",
+    "resource": "orders",
+    "method": "delete",
+    "args": [
+      "r1"
+    ],
+    "verb": "DELETE",
+    "path": "orders/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "contractors.list.12",
+    "resource": "contractors",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "contractors",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ],
+      "meta": {
+        "current_page": 1,
+        "last_page": 1
+      }
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": "Page",
+    "collect": false
+  },
+  {
+    "name": "contractors.all.13",
+    "resource": "contractors",
+    "method": "all",
+    "args": [
+      {
+        "page": 99
+      }
+    ],
+    "verb": "GET",
+    "path": "contractors",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ]
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "contractors.get.14",
+    "resource": "contractors",
+    "method": "get",
+    "args": [
+      "r1"
+    ],
+    "verb": "GET",
+    "path": "contractors/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Contractor",
+    "collect": false
+  },
+  {
+    "name": "contractors.create.15",
+    "resource": "contractors",
+    "method": "create",
+    "args": [
+      {
+        "name": "Zażółć gęślą jaźń",
+        "flag": false
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "contractors",
+    "body": {
+      "name": "Zażółć gęślą jaźń",
+      "flag": false
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Contractor",
+    "collect": false
+  },
+  {
+    "name": "contractors.update.16",
+    "resource": "contractors",
+    "method": "update",
+    "args": [
+      "r1",
+      {
+        "name": "X"
+      },
+      "event"
+    ],
+    "verb": "PUT",
+    "path": "contractors/r1",
+    "body": {
+      "name": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Contractor",
+    "collect": false
+  },
+  {
+    "name": "contractors.delete.17",
+    "resource": "contractors",
+    "method": "delete",
+    "args": [
+      "r1"
+    ],
+    "verb": "DELETE",
+    "path": "contractors/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "products.list.18",
+    "resource": "products",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "products",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ],
+      "meta": {
+        "current_page": 1,
+        "last_page": 1
+      }
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": "Page",
+    "collect": false
+  },
+  {
+    "name": "products.all.19",
+    "resource": "products",
+    "method": "all",
+    "args": [
+      {
+        "page": 99
+      }
+    ],
+    "verb": "GET",
+    "path": "products",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ]
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "products.get.20",
+    "resource": "products",
+    "method": "get",
+    "args": [
+      "r1"
+    ],
+    "verb": "GET",
+    "path": "products/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Product",
+    "collect": false
+  },
+  {
+    "name": "products.create.21",
+    "resource": "products",
+    "method": "create",
+    "args": [
+      {
+        "name": "Zażółć gęślą jaźń",
+        "flag": false
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "products",
+    "body": {
+      "name": "Zażółć gęślą jaźń",
+      "flag": false
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Product",
+    "collect": false
+  },
+  {
+    "name": "products.update.22",
+    "resource": "products",
+    "method": "update",
+    "args": [
+      "r1",
+      {
+        "name": "X"
+      },
+      "event"
+    ],
+    "verb": "PUT",
+    "path": "products/r1",
+    "body": {
+      "name": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Product",
+    "collect": false
+  },
+  {
+    "name": "products.delete.23",
+    "resource": "products",
+    "method": "delete",
+    "args": [
+      "r1"
+    ],
+    "verb": "DELETE",
+    "path": "products/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "incomingInvoices.list.24",
+    "resource": "incomingInvoices",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "incoming-invoices",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ],
+      "meta": {
+        "current_page": 1,
+        "last_page": 1
+      }
+    },
+    "query": {
+      "page": "1",
+      "per_page": "50"
+    },
+    "result": "Page",
+    "collect": false
+  },
+  {
+    "name": "incomingInvoices.all.25",
+    "resource": "incomingInvoices",
+    "method": "all",
+    "args": [
+      {
+        "page": 99
+      }
+    ],
+    "verb": "GET",
+    "path": "incoming-invoices",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "row"
+        }
+      ]
+    },
+    "query": {
+      "page": "1",
+      "per_page": "200"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "incomingInvoices.get.26",
+    "resource": "incomingInvoices",
+    "method": "get",
+    "args": [
+      "r1"
+    ],
+    "verb": "GET",
+    "path": "incoming-invoices/r1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "IncomingInvoice",
+    "collect": false
+  },
+  {
+    "name": "invoices.issue.27",
+    "resource": "invoices",
+    "method": "issue",
+    "args": [
+      "i1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/issue",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "invoices.sendToKsef.28",
+    "resource": "invoices",
+    "method": "sendToKsef",
+    "args": [
+      "i1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/ksef",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "KsefStatus",
+    "collect": false
+  },
+  {
+    "name": "invoices.publicLink.29",
+    "resource": "invoices",
+    "method": "publicLink",
+    "args": [
+      "i1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/public-link",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "PublicLink",
+    "collect": false
+  },
+  {
+    "name": "invoices.ksefStatus.30",
+    "resource": "invoices",
+    "method": "ksefStatus",
+    "args": [
+      "i1"
+    ],
+    "verb": "GET",
+    "path": "invoices/i1/ksef",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "KsefStatus",
+    "collect": false
+  },
+  {
+    "name": "invoices.sendEmail.31",
+    "resource": "invoices",
+    "method": "sendEmail",
+    "args": [
+      "i1",
+      "a@example.test",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/send-email",
+    "body": {
+      "email": "a@example.test"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "EmailDelivery",
+    "collect": false
+  },
+  {
+    "name": "invoices.recordPayment.32",
+    "resource": "invoices",
+    "method": "recordPayment",
+    "args": [
+      "i1",
+      "123.45"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/payments",
+    "body": {
+      "amount": "123.45",
+      "paid_at": "2026-09-10",
+      "payment_method": "card",
+      "note": "Wpłata"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false,
+    "options": {
+      "paidAt": "2026-09-10",
+      "paymentMethod": "card",
+      "note": "Wpłata",
+      "idempotencyKey": "event"
+    }
+  },
+  {
+    "name": "invoices.markPaid.33",
+    "resource": "invoices",
+    "method": "markPaid",
+    "args": [
+      "i1"
+    ],
+    "verb": "POST",
+    "path": "invoices/i1/mark-paid",
+    "body": {
+      "paid_at": "2026-09-10",
+      "payment_method": "transfer"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false,
+    "options": {
+      "paidAt": "2026-09-10",
+      "paymentMethod": "transfer",
+      "idempotencyKey": "event"
+    }
+  },
+  {
+    "name": "invoices.deletePayment.34",
+    "resource": "invoices",
+    "method": "deletePayment",
+    "args": [
+      "i1",
+      "p1"
+    ],
+    "verb": "DELETE",
+    "path": "invoices/i1/payments/p1",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "orders.confirm.35",
+    "resource": "orders",
+    "method": "confirm",
+    "args": [
+      "o1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/confirm",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Order",
+    "collect": false
+  },
+  {
+    "name": "orders.close.36",
+    "resource": "orders",
+    "method": "close",
+    "args": [
+      "o1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/close",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "o1"
+      },
+      "meta": {
+        "remaining_gross": "10.00"
+      }
+    },
+    "query": {},
+    "result": "OrderActionResult",
+    "collect": false
+  },
+  {
+    "name": "orders.cancel.37",
+    "resource": "orders",
+    "method": "cancel",
+    "args": [
+      "o1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/cancel",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "o1"
+      },
+      "meta": {
+        "remaining_gross": "10.00"
+      }
+    },
+    "query": {},
+    "result": "OrderActionResult",
+    "collect": false
+  },
+  {
+    "name": "orders.sendConfirmation.38",
+    "resource": "orders",
+    "method": "sendConfirmation",
+    "args": [
+      "o1",
+      null,
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/send-confirmation",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Order",
+    "collect": false
+  },
+  {
+    "name": "orders.issueAdvance.39",
+    "resource": "orders",
+    "method": "issueAdvance",
+    "args": [
+      "o1",
+      {
+        "amount": "100"
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/issue-advance",
+    "body": {
+      "amount": "100"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "orders.markPaid.40",
+    "resource": "orders",
+    "method": "markPaid",
+    "args": [
+      "o1"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/mark-paid",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false
+  },
+  {
+    "name": "orders.markPaid.41",
+    "resource": "orders",
+    "method": "markPaid",
+    "args": [
+      "o1"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/mark-paid",
+    "body": {
+      "send_email": false,
+      "mark_paid": false,
+      "series_id": "s1",
+      "invoice_type": "oss",
+      "oss_vat_type": "19"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false,
+    "options": {
+      "sendEmail": false,
+      "markPaid": false,
+      "seriesId": "s1",
+      "invoiceType": "oss",
+      "ossVatType": "19",
+      "idempotencyKey": "event"
+    }
+  },
+  {
+    "name": "orders.issueCorrection.42",
+    "resource": "orders",
+    "method": "issueCorrection",
+    "args": [
+      "o1",
+      [
+        {
+          "line_number": 1,
+          "quantity": 0
+        }
+      ],
+      "Zwrot",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/issue-correction",
+    "body": {
+      "lines": [
+        {
+          "line_number": 1,
+          "quantity": 0
+        }
+      ],
+      "reason": "Zwrot"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "OrderActionResult",
+    "collect": false
+  },
+  {
+    "name": "orders.issueKor.43",
+    "resource": "orders",
+    "method": "issueKor",
+    "args": [
+      "o1"
+    ],
+    "verb": "POST",
+    "path": "orders/o1/issue-kor",
+    "body": {
+      "series_id": "s1",
+      "send_email": false
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "Invoice",
+    "collect": false,
+    "options": {
+      "seriesId": "s1",
+      "sendEmail": false,
+      "idempotencyKey": "event"
+    }
+  },
+  {
+    "name": "contractors.insights.44",
+    "resource": "contractors",
+    "method": "insights",
+    "args": [
+      "c1"
+    ],
+    "verb": "GET",
+    "path": "contractors/c1/insights",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "ContractorInsights",
+    "collect": false
+  },
+  {
+    "name": "contractors.findByTaxNumber.45",
+    "resource": "contractors",
+    "method": "findByTaxNumber",
+    "args": [
+      "526-104-08-28"
+    ],
+    "verb": "GET",
+    "path": "contractors",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "c1",
+          "tax_number": "5261040828"
+        }
+      ]
+    },
+    "query": {
+      "search": "5261040828",
+      "page": "1",
+      "per_page": "50"
+    },
+    "result": "Contractor",
+    "collect": false
+  },
+  {
+    "name": "products.price.46",
+    "resource": "products",
+    "method": "price",
+    "args": [
+      "p1",
+      "c1",
+      "g1"
+    ],
+    "verb": "GET",
+    "path": "products/p1/price",
+    "body": null,
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {
+      "contractor_id": "c1",
+      "price_group_id": "g1"
+    },
+    "result": "ProductPrice",
+    "collect": false
+  },
+  {
+    "name": "priceGroups.list.47",
+    "resource": "priceGroups",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "price-groups",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "incomingInvoices.accept.48",
+    "resource": "incomingInvoices",
+    "method": "accept",
+    "args": [
+      "i1",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "incoming-invoices/i1/accept",
+    "body": {},
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "IncomingInvoice",
+    "collect": false
+  },
+  {
+    "name": "incomingInvoices.reject.49",
+    "resource": "incomingInvoices",
+    "method": "reject",
+    "args": [
+      "i1",
+      "Duplikat",
+      "event"
+    ],
+    "verb": "POST",
+    "path": "incoming-invoices/i1/reject",
+    "body": {
+      "reason": "Duplikat"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "IncomingInvoice",
+    "collect": false
+  },
+  {
+    "name": "incomingInvoices.vote.50",
+    "resource": "incomingInvoices",
+    "method": "vote",
+    "args": [
+      "i1",
+      "approved",
+      "a@example.test"
+    ],
+    "verb": "POST",
+    "path": "incoming-invoices/i1/vote",
+    "body": {
+      "decision": "approved",
+      "email": "a@example.test",
+      "name": "Jan",
+      "decided_at": "2026-09-10T10:00:00+02:00",
+      "ksef_number": "K1"
+    },
+    "response": {
+      "data": {
+        "id": "i1"
+      },
+      "applied": false,
+      "reason": "no_member"
+    },
+    "query": {},
+    "result": "VoteResult",
+    "collect": false,
+    "options": {
+      "name": "Jan",
+      "decidedAt": "2026-09-10T10:00:00+02:00",
+      "ksefNumber": "K1",
+      "idempotencyKey": "event"
+    }
+  },
+  {
+    "name": "incomingInvoices.updatedSince.51",
+    "resource": "incomingInvoices",
+    "method": "updatedSince",
+    "args": [
+      "2026-09-01T00:00:00+00:00",
+      "pending"
+    ],
+    "verb": "GET",
+    "path": "incoming-invoices",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "updated_since": "2026-09-01T00:00:00+00:00",
+      "status": "pending",
+      "page": "1",
+      "per_page": "200"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "warehouse.warehouses.52",
+    "resource": "warehouse",
+    "method": "warehouses",
+    "args": [],
+    "verb": "GET",
+    "path": "warehouse/warehouses",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "warehouse.stocks.53",
+    "resource": "warehouse",
+    "method": "stocks",
+    "args": [],
+    "verb": "GET",
+    "path": "warehouse/stocks",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "warehouse.allStocks.54",
+    "resource": "warehouse",
+    "method": "allStocks",
+    "args": [],
+    "verb": "GET",
+    "path": "warehouse/stocks",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "warehouse.movements.55",
+    "resource": "warehouse",
+    "method": "movements",
+    "args": [],
+    "verb": "GET",
+    "path": "warehouse/movements",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "page": "1",
+      "per_page": "15"
+    },
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "warehouse.allMovements.56",
+    "resource": "warehouse",
+    "method": "allMovements",
+    "args": [],
+    "verb": "GET",
+    "path": "warehouse/movements",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "page": "1",
+      "per_page": "100"
+    },
+    "result": null,
+    "collect": true
+  },
+  {
+    "name": "warehouse.move.57",
+    "resource": "warehouse",
+    "method": "move",
+    "args": [
+      "pw",
+      2,
+      {
+        "sku": "X",
+        "type": "bad",
+        "quantity": 999
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "warehouse/movements",
+    "body": {
+      "type": "pw",
+      "quantity": 2,
+      "sku": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "StockMovementReceipt",
+    "collect": false
+  },
+  {
+    "name": "warehouse.receive.58",
+    "resource": "warehouse",
+    "method": "receive",
+    "args": [
+      2,
+      {
+        "sku": "X"
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "warehouse/movements",
+    "body": {
+      "type": "pz",
+      "quantity": 2,
+      "sku": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "StockMovementReceipt",
+    "collect": false
+  },
+  {
+    "name": "warehouse.issue.59",
+    "resource": "warehouse",
+    "method": "issue",
+    "args": [
+      2,
+      {
+        "sku": "X"
+      },
+      "event"
+    ],
+    "verb": "POST",
+    "path": "warehouse/movements",
+    "body": {
+      "type": "wz",
+      "quantity": 2,
+      "sku": "X"
+    },
+    "response": {
+      "data": {
+        "id": "result"
+      }
+    },
+    "query": {},
+    "result": "StockMovementReceipt",
+    "collect": false
+  },
+  {
+    "name": "reports.profitability.60",
+    "resource": "reports",
+    "method": "profitability",
+    "args": [
+      "2026-09-01",
+      "2026-09-30",
+      "product"
+    ],
+    "verb": "GET",
+    "path": "reports/profitability",
+    "body": null,
+    "response": {
+      "summary": {
+        "margin": 10
+      },
+      "meta": {},
+      "groups": [],
+      "below_cost": []
+    },
+    "query": {
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "group_by": "product"
+    },
+    "result": "ProfitabilityReport",
+    "collect": false
+  },
+  {
+    "name": "invoiceSeries.list.61",
+    "resource": "invoiceSeries",
+    "method": "list",
+    "args": [],
+    "verb": "GET",
+    "path": "invoice-series",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {},
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "invoiceSeries.default.62",
+    "resource": "invoiceSeries",
+    "method": "default",
+    "args": [],
+    "verb": "GET",
+    "path": "invoice-series",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "s1",
+          "is_default": true
+        }
+      ]
+    },
+    "query": {
+      "type": "VAT"
+    },
+    "result": "InvoiceSerie",
+    "collect": false
+  },
+  {
+    "name": "bankAccounts.list.63",
+    "resource": "bankAccounts",
+    "method": "list",
+    "args": [
+      false
+    ],
+    "verb": "GET",
+    "path": "bank-accounts",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "active_only": "0"
+    },
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "bankAccounts.default.64",
+    "resource": "bankAccounts",
+    "method": "default",
+    "args": [],
+    "verb": "GET",
+    "path": "bank-accounts",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "id": "b1",
+          "is_default": true
+        }
+      ]
+    },
+    "query": {
+      "active_only": "1"
+    },
+    "result": "BankAccount",
+    "collect": false
+  },
+  {
+    "name": "exchangeRates.list.65",
+    "resource": "exchangeRates",
+    "method": "list",
+    "args": [
+      "eur",
+      null,
+      "2026-09-01",
+      "2026-09-30"
+    ],
+    "verb": "GET",
+    "path": "exchange-rates",
+    "body": null,
+    "response": {
+      "data": []
+    },
+    "query": {
+      "currency": "EUR",
+      "date_from": "2026-09-01",
+      "date_to": "2026-09-30"
+    },
+    "result": null,
+    "collect": false
+  },
+  {
+    "name": "exchangeRates.rate.66",
+    "resource": "exchangeRates",
+    "method": "rate",
+    "args": [
+      "usd",
+      "2026-09-10"
+    ],
+    "verb": "GET",
+    "path": "exchange-rates",
+    "body": null,
+    "response": {
+      "data": [
+        {
+          "currency": "USD",
+          "rate": "4.01"
+        }
+      ]
+    },
+    "query": {
+      "currency": "USD",
+      "date": "2026-09-10"
+    },
+    "result": "ExchangeRate",
+    "collect": false
+  }
+]
