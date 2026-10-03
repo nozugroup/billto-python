@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "billto-python"
 version = "1.0.0"
 description = "Python SDK for the BillTo API, ported from billto-php 1.0.0."
+readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 authors = [{name = "NOZU sp. z o.o."}]
@@ -13,6 +14,8 @@ dependencies = []
 keywords = ["billto", "api", "sdk", "invoices", "ksef"]
 
 [project.urls]
+"Repository" = "https://github.com/nozugroup/billto-python"
+"Issues" = "https://github.com/nozugroup/billto-python/issues"
 "API reference" = "https://billto.pl/developers"
 "PHP reference implementation" = "https://github.com/nozugroup/billto-php"
 
